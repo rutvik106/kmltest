@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Doon test 2</name>
+    <description/>
+    <Style id="poly-3949AB-4-0-nodesc-normal">
+      <LineStyle>
+        <color>ffab4939</color>
+        <width>4</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>00ab4939</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="poly-3949AB-4-0-nodesc-highlight">
+      <LineStyle>
+        <color>ffab4939</color>
+        <width>6</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>00ab4939</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="poly-3949AB-4-0-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-3949AB-4-0-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-3949AB-4-0-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Untitled layer</name>
+      <Placemark>
+        <name>Polygon 1</name>
+        <styleUrl>#poly-3949AB-4-0-nodesc</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                78.0530119,30.2835108,0
+                78.0524755,30.2831031,0
+                78.0509949,30.2818616,0
+                78.0513811,30.2813984,0
+                78.0508876,30.2807498,0
+                78.0494499,30.2780629,0
+                78.0488062,30.2763951,0
+                78.0494285,30.2759875,0
+                78.0483127,30.2738934,0
+                78.0495143,30.2718179,0
+                78.0508018,30.2738934,0
+                78.0546427,30.2766175,0
+                78.0565524,30.2779517,0
+                78.0571747,30.2796565,0
+                78.0588055,30.2813428,0
+                78.0564022,30.283696,0
+                78.0530119,30.2835108,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
