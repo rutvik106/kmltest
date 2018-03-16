@@ -12,7 +12,7 @@
         }
 
         #map {
-            height: 100%;
+            height: 80%;
         }
 
         #btn-alert {
@@ -20,23 +20,27 @@
             padding: 10px;
             color: red;
             background-color: black;
-            font-size: 50px;
+            font-size: 32px;
         }
 
     </style>
 </head>
 <body>
-2
-<button id="btn-alert" onclick="showAlert();">Alert</button>
+
+<button id="btn-alert" onclick="showAlert();">Generate KML</button>
 
 <div id="map"></div>
 
 <script>
 
     var all_overlays = [];
-    var selectedShape;
+    var selectedShape=null;
 
     function showAlert() {
+        if(selectedShape==null){
+            alert("Please draw a polygon shape on map first");
+            return;
+        }
         getPolygonCoords(selectedShape);
     }
 
@@ -71,22 +75,8 @@
                     drawingControlOptions: {
                         position: google.maps.ControlPosition.TOP_CENTER,
                         drawingModes: [
-                            //google.maps.drawing.OverlayType.MARKER,
-                            google.maps.drawing.OverlayType.CIRCLE,
-                            google.maps.drawing.OverlayType.POLYGON,
-                            google.maps.drawing.OverlayType.RECTANGLE
+                            google.maps.drawing.OverlayType.POLYGON
                         ]
-                    },
-                    markerOptions: {
-                        icon: 'images/beachflag.png'
-                    },
-                    circleOptions: {
-                        fillColor: '#ffff00',
-                        fillOpacity: 0.2,
-                        strokeWeight: 3,
-                        clickable: false,
-                        editable: true,
-                        zIndex: 1
                     },
                     polygonOptions: {
                         clickable: true,
@@ -96,13 +86,6 @@
                         fillOpacity: 0.5,
 
                     },
-                    rectangleOptions: {
-                        clickable: true,
-                        draggable: true,
-                        editable: true,
-                        fillColor: '#ffff00',
-                        fillOpacity: 0.5,
-                    }
                 });
 
                 function clearSelection() {
