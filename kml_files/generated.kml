@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+    <Document>
+        <name>Untitled layer</name>
+        <description>layer description</description>
+        <Style id="Lump">
+            <LineStyle>
+                <color>CD0000FF</color>
+                <width>2</width>
+            </LineStyle>
+            <PolyStyle>
+                <color>9AFF0000</color>
+            </PolyStyle>
+        </Style>
+        <Style id="Lump">
+            <LineStyle>
+                <color>CD0000FF</color>
+                <width>2</width>
+            </LineStyle>
+            <PolyStyle>
+                <color>9AFF0000</color>
+            </PolyStyle>
+        </Style>
+        <Style id="Lump">
+            <LineStyle>
+                <color>CD0000FF</color>
+                <width>2</width>
+            </LineStyle>
+            <PolyStyle>
+                <color>9AFF0000</color>
+            </PolyStyle>
+        </Style>
+        <Style id="Lump">
+            <LineStyle>
+                <color>CD0000FF</color>
+                <width>2</width>
+            </LineStyle>
+            <PolyStyle>
+                <color>9AFF0000</color>
+            </PolyStyle>
+        </Style>
+        <Placemark>
+            <name>name of geofence</name>
+            <description>Description</description>
+            <styleUrl>#poly-01579B-6-0-nodesc</styleUrl>
+            <Polygon>
+                <tessellate>1</tessellate>
+                <outerBoundaryIs>
+                    <LinearRing>
+                        <coordinates>
+                            72.513614,23.02682,0.0
+                            72.513571,23.025477,0.0
+                            72.51548,23.025699,0.0
+                            72.515287,23.027047,0.0
+                        </coordinates>
+                    </LinearRing>
+                </outerBoundaryIs>
+            </Polygon>
+        </Placemark>
+    </Document>
+</kml>
